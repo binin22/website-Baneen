@@ -1,0 +1,133 @@
+.ul{
+  display: flex;
+  gap:60px;
+  list-style: none;
+  padding:0px 50px;
+  margin: 0;
+
+}
+.ul li a.link{
+  text-decoration:none;
+  color:#333;
+  font-weight: bold;
+  font-size: larger;
+  
+}
+ .ul li a.link:hover{
+ color:#a77c47;
+
+ }
+
+ .header{
+  display: flex;
+  align-items: center;
+  padding: 5px 5px;
+  
+
+ }
+ 
+ 
+ 
+ body{
+  background-image: url("../image/photo_2025-06-27_18-03-09.jpg");  
+  background-color:rgba(230, 212, 182) ;
+  background-blend-mode: overlay;
+  font-size: 2vw;
+  font-size: 3vh;
+ 
+}
+p{
+  line-height: 1.6;
+}
+li{
+  line-height: 1.6;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 40px;
+  
+}
+.hero img{
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+.right{
+  flex:1;
+
+}
+.right h1{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.right p{
+  font-size: 16px;
+  margin-bottom: 20px;
+  color:#333;
+
+}
+.right button{
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 15px 20px;
+  background-color: #e5d1b8;
+  color: #333;
+  cursor:pointer;
+  margin-right: 60px;
+  
+}
+a{
+  text-decoration: none;
+}
+.right button:hover {
+  background-color: #d6b890;
+}
+.main{
+  display: flex;
+  gap:60px;
+  align-items: center;
+  padding: 20px 5px;
+  
+}
+.contact{
+
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 30px;
+  max-width: 600px;
+  align-self: flex-start;
+
+}
+.contact h1{
+
+  margin-bottom: 22px;
+
+}
+.contact form label{
+  padding: 0px 50px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: large;
+}
+.contact form input{
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 8px;
+  border:2px solid #333;
+  background-color: #e5d1b8;
+  font-size: medium;
+
+}
+.contact form button{
+padding: 10px 100px;
+margin-left: 100px;
+border-radius: 20px;
+margin-top: 8px;
+border:2px solid #333;
+background-color: #e5d1b8;
+font-size: medium;
+
+}
+
