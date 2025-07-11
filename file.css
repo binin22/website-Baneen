@@ -17,6 +17,9 @@
  color:#a77c47;
 
  }
+.li{
+ list-style-type: georgian;
+}
 
  .header{
   display: flex;
