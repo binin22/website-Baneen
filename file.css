@@ -185,7 +185,7 @@ font-family: 'Times New Roman', Times, serif;
   white-space: nowrap;
   font-size: 3rem;
   transform: translateY(0px);
-  animation: typing 4s steps(15)  infinite alternate, blink 0.7s step-end infinite;
+  animation: typing 4s steps(15) infinite alternate, blink 0.7s step-end infinite;
  }
 
  @keyframes typing {
