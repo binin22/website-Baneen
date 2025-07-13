@@ -12,15 +12,12 @@
   font-weight: bold;
   font-size: larger;
   
+  
 }
  .ul li a.link:hover{
  color:#a77c47;
 
  }
-.li{
- list-style-type: georgian;
-  font-size:25px;
-}
 
  .header{
   display: flex;
@@ -36,17 +33,30 @@
  
  
  body{
-  background-image: url("photo_2025-06-27_18-03-09.jpg");  
+  background-image: url("../image/photo_2025-06-27_18-03-09.jpg");  
   background-color:rgba(230, 212, 182) ;
   background-blend-mode: overlay;
-  
+  font-size: 2vw;
+  font-size: 3vh;
  
 }
+
 p{
-  line-height: 1.6;
+  line-height: 1.7;
+  font-style: oblique;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
 }
 li{
-  line-height: 1.6;
+  line-height: 1.7;
+  font-style: oblique;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.li{
+  list-style-type: georgian;
+  font-size: 25px;
 }
 .hero{
   display: flex;
@@ -58,8 +68,10 @@ li{
 .hero img{
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-right:220px;
 
 }
+
 .right{
   flex:1;
   font-style: oblique;
@@ -72,10 +84,15 @@ li{
   margin-bottom: 10px;
 }
 .right p{
-  font-size: 16px;
+  font-size: 25px;
   margin-bottom: 20px;
   color:#333;
 
+}
+h1{
+  font-size:50px;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
 }
 .right button{
   font-weight: bold;
@@ -89,12 +106,6 @@ li{
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
   
-  
-}
-h1{
-  font-size:50px;
-  font-style: oblique;
-  font-family: 'Times New Roman', Times, serif;
 }
 a{
   text-decoration: none;
@@ -117,6 +128,7 @@ a{
   max-width: 600px;
   align-self: flex-start;
 
+
 }
 .contact h1{
 
@@ -127,7 +139,6 @@ a{
   padding: 0px 50px;
   margin-top: 15px;
   font-weight: bold;
-  font-size: large;
   font-size:20px;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
@@ -138,7 +149,6 @@ a{
   margin-top: 8px;
   border:2px solid #333;
   background-color: #e5d1b8;
-  font-size: medium;
   font-size:20px;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
@@ -151,10 +161,21 @@ border-radius: 20px;
 margin-top: 8px;
 border:2px solid #333;
 background-color: #e5d1b8;
-font-size: medium;
 font-size:20px;
 font-style: oblique;
 font-family: 'Times New Roman', Times, serif;
 
 }
 
+#message{
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 8px;
+  border:2px solid #333;
+  background-color: #e5d1b8;
+  font-size:20px;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+
+
+}
