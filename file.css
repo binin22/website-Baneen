@@ -1,3 +1,22 @@
+.animated-name{
+  
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 3rem;
+  transform: translateY(0px);
+  animation: typing 4s steps(15) forwards, blink 0.7s step-end infinite;
+ }
+
+ @keyframes typing {
+  from{width: 0;}
+  to{width: 15ch;}
+}
+@keyframes blink{
+  50%{border-color:transparent}
+
+}
+
 .animated{
   opacity: 0;
   transform: translateY(50px);
