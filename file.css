@@ -1,20 +1,8 @@
-
-.animated{
-  opacity: 0;
-  transform: translateY(50px);
-  animation: slideUp 2s ease-in-out infinite alternate ;
- }
- @keyframes slideUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .ul{
   display: flex;
-  gap:60px;
+  gap:50%;
   list-style: none;
-  padding:0px 50px;
+  padding:0% 25%;
   margin: 0;
 
 }
@@ -30,13 +18,44 @@
  color:#a77c47;
 
  }
+ .animatedname{
+  
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 3rem;
+  transform: translateY(0%);
+  animation: typing 4s steps(16) infinite alternate, blink 0.7s step-end  infinite ;
+ }
+
+ @keyframes typing {
+  from{width: 0;}
+  to{width: 16ch;}
+}
+@keyframes blink{
+  50%{border-color:transparent}
+
+}
+
+.animated{
+  opacity: 0;
+  transform: translateY(40%);
+  animation: slideUp 2s ease-in-out infinite alternate ;
+ }
+  @keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
 
  .header{
   display: flex;
   align-items: center;
-  padding: 5px 5px;
+  padding: 0% 1%;
   position: sticky;
-  top: 0px;
+  top: 0%;
   background-color: #e5d1b8;
   
 
@@ -56,7 +75,7 @@
 p{
   line-height: 1.7;
   font-style: oblique;
-  font-size: 25px;
+  font-size: 100%;
   font-family: 'Times New Roman', Times, serif;
 }
 li{
@@ -68,18 +87,18 @@ li{
 }
 .li{
   list-style-type: georgian;
-  font-size: 25px;
+  font-size: 100%;
 }
 .hero{
   display: flex;
   align-items: center;
-  gap: 60px;
-  margin-top: 40px;
+  gap: -10%;
+  margin-top: 3%;
   
 }
 .hero img{
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10%;
+  box-shadow: 0 4% 10% rgba(0,0,0,0.1);
   margin-right:220px;
 
 }
@@ -87,34 +106,34 @@ li{
 .right{
   flex:1;
   font-style: oblique;
-  font-size: 30px;
+  font-size: 100%;
   font-family: 'Times New Roman', Times, serif;
 
 }
 .right h1{
-  font-size: 30px;
+  font-size: 45px;
   margin-bottom: 10px;
 }
 .right p{
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
   color:#333;
 
 }
 h1{
-  font-size:50px;
+  font-size:170%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
 .right button{
   font-weight: bold;
-  border-radius: 20px;
-  padding: 15px 20px;
+  border-radius: 20%;
+  padding: 2% 2%;
   background-color: #e5d1b8;
   color: #333;
   cursor:pointer;
-  margin-right: 60px;
-  font-size:20px;
+  margin-right: 10%;
+  font-size:90%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
   
@@ -127,84 +146,64 @@ a{
 }
 .main{
   display: flex;
-  gap:60px;
+  gap:8%;
   align-items: center;
-  padding: 20px 5px;
+  padding: 8% 5%;
   
 }
 .contact{
 
-  border-radius: 20px;
-  margin-top: 50px;
-  padding: 30px;
-  max-width: 600px;
+  border-radius: 20%;
+  margin-top: 2%;
+  padding: 0% 30%;
   align-self: flex-start;
 
 
 }
 .contact h1{
 
-  margin-bottom: 22px;
+  margin-bottom: 12%;
 
 }
 .contact form label{
-  padding: 0px 50px;
-  margin-top: 15px;
+  padding: 0px 15%;
+  margin-top: 15%;
   font-weight: bold;
-  font-size:20px;
+  font-size:100%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
 .contact form input{
-  padding: 10px;
-  border-radius: 20px;
-  margin-top: 8px;
-  border:2px solid #333;
+  padding: 2% 4%;
+  border-radius: 20%;
+  margin-top: 8%;
+  border:2% solid #333;
   background-color: #e5d1b8;
-  font-size:20px;
+  font-size:100%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 
 }
 .contact form button{
-padding: 10px 100px;
-margin-left: 100px;
-border-radius: 20px;
-margin-top: 8px;
-border:2px solid #333;
+padding: 2% 12%;
+margin-left: 20%;
+border-radius: 20%;
+margin-top: 8%;
+border:4% solid #333;
 background-color: #e5d1b8;
-font-size:20px;
+font-size:100%;
 font-style: oblique;
 font-family: 'Times New Roman', Times, serif;
 
 }
-.animatedname{
-  
-  width: fit-content;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 3rem;
-  transform: translateY(0px);
-  animation: typing 4s steps(15) infinite alternate, blink 0.7s step-end infinite;
- }
-
- @keyframes typing {
-  from{width: 0;}
-  to{width: 15ch;}
-}
-@keyframes blink{
-  50%{border-color:transparent}
-
-}
-
 
 #message{
-  padding: 10px;
-  border-radius: 20px;
-  margin-top: 8px;
-  border:2px solid #333;
+  padding: 5% 5%;
+  border-radius: 20%;
+  margin-top: 8%;
+  border:2% solid #333;
   background-color: #e5d1b8;
-  font-size:20px;
+  font-size:100%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 
