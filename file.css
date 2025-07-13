@@ -1,6 +1,6 @@
 .ul{
   display: flex;
-  gap:20%;
+  gap:50%;
   list-style: none;
   padding:0% 25%;
   margin: 0;
@@ -44,8 +44,7 @@
   display: flex;
   align-items: center;
   padding: 0% 1%;
-  position: sticky;
-  top: 0%;
+
   background-color: #e5d1b8;
 }
 body{
@@ -64,12 +63,12 @@ p{
 li{
   line-height: 1.7;
   font-style: oblique;
-  font-size: small;
+  font-size: large;
   font-family: 'Times New Roman', Times, serif;
 }
 .li{
   list-style-type: georgian;
-  font-size: 30%;
+  font-size: 100%;
 }
 .hero{
   display: flex;
@@ -85,20 +84,20 @@ li{
 .right{
   flex:1;
   font-style: oblique;
-  font-size: 30%;
+  font-size: 100%;
   font-family: 'Times New Roman', Times, serif;
 }
 .right h1{
-  font-size: 30%;
+  font-size: 45px;
   margin-bottom: 10px;
 }
 .right p{
-  font-size: 30%;
+  font-size: 25px;
   margin-bottom: 10%;
   color:#333;
 }
 h1{
-  font-size:50%;
+  font-size:170%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -110,7 +109,7 @@ h1{
   color: #333;
   cursor:pointer;
   margin-right: 10%;
-  font-size:30%;
+  font-size:90%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -139,7 +138,7 @@ a{
   padding: 0px 15%;
   margin-top: 15%;
   font-weight: bold;
-  font-size:30%;
+  font-size:100%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -149,7 +148,7 @@ a{
   margin-top: 8%;
   border:2% solid #333;
   background-color: #e5d1b8;
-  font-size:30%;
+  font-size:100%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -160,7 +159,7 @@ a{
   margin-top: 8%;
   border:4% solid #333;
   background-color: #e5d1b8;
-  font-size:30%;
+  font-size:100%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -170,7 +169,7 @@ a{
   margin-top: 8%;
   border:2% solid #333;
   background-color: #e5d1b8;
-  font-size:30%;
+  font-size:100%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
