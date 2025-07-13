@@ -4,74 +4,57 @@
   list-style: none;
   padding:0% 25%;
   margin: 0;
-
 }
 .ul li a.link{
   text-decoration:none;
   color:#333;
   font-weight: bold;
   font-size: larger;
-  
-  
 }
- .ul li a.link:hover{
- color:#a77c47;
-
- }
- .animatedname{
-  
+.ul li a.link:hover{
+  color:#a77c47;
+}
+.animatedname{
   width: fit-content;
   overflow: hidden;
   white-space: nowrap;
   font-size: 3rem;
   transform: translateY(0%);
   animation: typing 4s steps(16) infinite alternate, blink 0.7s step-end  infinite ;
- }
-
- @keyframes typing {
+}
+@keyframes typing {
   from{width: 0;}
   to{width: 16ch;}
 }
 @keyframes blink{
   50%{border-color:transparent}
-
 }
-
 .animated{
   opacity: 0;
   transform: translateY(40%);
   animation: slideUp 2s ease-in-out infinite alternate ;
- }
-  @keyframes slideUp {
+}
+@keyframes slideUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
- 
-
- .header{
+.header{
   display: flex;
   align-items: center;
   padding: 0% 1%;
   position: sticky;
   top: 0%;
   background-color: #e5d1b8;
-  
-
- }
- 
- 
- 
- body{
+}
+body{
   background-image: url("photo_2025-06-27_18-03-09.jpg");  
   background-color:rgba(230, 212, 182) ;
   background-blend-mode: overlay;
   font-size: 2vw;
   font-size: 3vh;
- 
 }
-
 p{
   line-height: 1.7;
   font-style: oblique;
@@ -83,7 +66,6 @@ li{
   font-style: oblique;
   font-size: large;
   font-family: 'Times New Roman', Times, serif;
-  
 }
 .li{
   list-style-type: georgian;
@@ -94,21 +76,17 @@ li{
   align-items: center;
   gap: -10%;
   margin-top: 3%;
-  
 }
 .hero img{
   border-radius: 10%;
   box-shadow: 0 4% 10% rgba(0,0,0,0.1);
   margin-right:220px;
-
 }
-
 .right{
   flex:1;
   font-style: oblique;
   font-size: 100%;
   font-family: 'Times New Roman', Times, serif;
-
 }
 .right h1{
   font-size: 45px;
@@ -118,7 +96,6 @@ li{
   font-size: 25px;
   margin-bottom: 10%;
   color:#333;
-
 }
 h1{
   font-size:170%;
@@ -136,7 +113,6 @@ h1{
   font-size:90%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
-  
 }
 a{
   text-decoration: none;
@@ -149,21 +125,15 @@ a{
   gap:8%;
   align-items: center;
   padding: 8% 5%;
-  
 }
 .contact{
-
   border-radius: 20%;
   margin-top: 2%;
   padding: 0% 30%;
   align-self: flex-start;
-
-
 }
 .contact h1{
-
   margin-bottom: 12%;
-
 }
 .contact form label{
   padding: 0px 15%;
@@ -182,21 +152,18 @@ a{
   font-size:100%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
-
 }
 .contact form button{
-padding: 2% 12%;
-margin-left: 20%;
-border-radius: 20%;
-margin-top: 8%;
-border:4% solid #333;
-background-color: #e5d1b8;
-font-size:100%;
-font-style: oblique;
-font-family: 'Times New Roman', Times, serif;
-
+  padding: 2% 12%;
+  margin-left: 20%;
+  border-radius: 20%;
+  margin-top: 8%;
+  border:4% solid #333;
+  background-color: #e5d1b8;
+  font-size:100%;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
 }
-
 #message{
   padding: 5% 5%;
   border-radius: 20%;
@@ -206,6 +173,44 @@ font-family: 'Times New Roman', Times, serif;
   font-size:100%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
+}
 
-
+/* ✅ دعم الموبايل فقط */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+  .hero {
+    flex-direction: column;
+    margin-top: 5%;
+    gap: 20px;
+  }
+  .hero img {
+    margin-right: 0;
+    width: 80%;
+    height: auto;
+  }
+  .main {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact {
+    padding: 5%;
+  }
+  .contact form label,
+  .contact form input,
+  .contact form button,
+  #message {
+    padding: 3% 5%;
+    margin: 3% 0;
+  }
+  .right button {
+    margin-right: 0;
+  }
 }
