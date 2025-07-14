@@ -1,8 +1,10 @@
+/* تصميم Baneen الأصلي مع دعم الموبايل */
+
 .ul{
   display: flex;
-  gap:50%;
+  gap:10%;
   list-style: none;
-  padding:0% 25%;
+  padding:0% 10%;
   margin: 0;
 }
 .ul li a.link{
@@ -43,8 +45,10 @@
 .header{
   display: flex;
   align-items: center;
-  padding: 0% 1%;
-
+  justify-content: space-between;
+  padding: 0% 5%;
+  position: sticky;
+  top: 0%;
   background-color: #e5d1b8;
 }
 body{
@@ -174,42 +178,50 @@ a{
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* ✅ دعم الموبايل فقط */
+/* تعديل حجم الخط للموبايل وتقليل المسافة بين الاسم والقائمة */
 @media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  .animated-name {
+    font-size: 24px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .header {
-    flex-direction: column;
-    align-items: center;
+    gap: 5px;
+    padding: 2% 5%;
   }
-  .ul {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
+  .right h1 {
+    font-size: 20px;
   }
-  .hero {
-    flex-direction: column;
-    margin-top: 5%;
-    gap: 20px;
+  .right p {
+    font-size: 14px;
   }
-  .hero img {
-    margin-right: 0;
-    width: 80%;
-    height: auto;
+  .ul li a.link {
+    font-size: 14px;
   }
-  .main {
-    flex-direction: column;
-    gap: 30px;
+  .right button {
+    font-size: 12px;
+    margin-right: 5px;
   }
-  .contact {
-    padding: 5%;
+  h1 {
+    font-size: 18px;
+  }
+  .li {
+    font-size: 14px;
   }
   .contact form label,
   .contact form input,
   .contact form button,
   #message {
-    padding: 3% 5%;
-    margin: 3% 0;
+    font-size: 14px;
   }
-  .right button {
-    margin-right: 0;
+  .hero img {
+    max-width: 220px;
+    height: auto;
+    margin-right: 15px;
   }
 }
