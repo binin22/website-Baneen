@@ -69,10 +69,11 @@ li{
   font-size: small;
   font-family: 'Times New Roman', Times, serif;
 }
-.li{
-  list-style-type: georgian;
-  font-size: 30%;
+.li {
+  list-style-type: none;  /* إزالة الخط الجوزي */
+  font-size: 100%;        /* حجم خط طبيعي */
 }
+
 .hero{
   display: flex;
   align-items: center;
@@ -177,6 +178,8 @@ a{
   font-family: 'Times New Roman', Times, serif;
 }
 
+
+
 /* ✅ دعم الموبايل فقط */
 @media (max-width: 768px) {
   .header {
@@ -184,6 +187,9 @@ a{
     align-items: center;
     justify-content: space-between;
     padding: 2% 5%;
+  }
+  .li {
+    font-size: 14px; /* الحجم الصغير الحالي */
   }
   .ul {
     flex-direction: column;
@@ -208,10 +214,19 @@ a{
     display: block; /* About و Project فوق بعض */
     padding: 5%;
   }
-  .about,
   .project {
-    margin-bottom: 40px;
-  }
+  font-size: 100%; /* حجم خط طبيعي */
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.project h1 {
+  font-size: 170%; /* نفس حجم About Me */
+  font-style: oblique;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
   .about h1,
   .project h1 {
     text-align: center;
