@@ -36,7 +36,7 @@ body {
   overflow: hidden;
   border-right: 2px solid #5a3e2b;
   width: 0;
-  animation: typingLeft 3.5s steps(25, end) forwards, blink 0.6s step-end infinite;
+  animation: typingLeft 3.5s steps(25, end) infinite alternate, blink 0.6s step-end infinite;
   display: inline-block;
   text-align: left;
   direction: ltr;
