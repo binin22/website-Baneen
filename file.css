@@ -1,10 +1,8 @@
-/* تصميم Baneen الأصلي مع دعم الموبايل */
-
 .ul{
   display: flex;
-  gap:10%;
+  gap:20%;
   list-style: none;
-  padding:0% 10%;
+  padding:0% 25%;
   margin: 0;
 }
 .ul li a.link{
@@ -45,8 +43,7 @@
 .header{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0% 5%;
+  padding: 0% 1%;
   position: sticky;
   top: 0%;
   background-color: #e5d1b8;
@@ -67,12 +64,12 @@ p{
 li{
   line-height: 1.7;
   font-style: oblique;
-  font-size: large;
+  font-size: small;
   font-family: 'Times New Roman', Times, serif;
 }
 .li{
   list-style-type: georgian;
-  font-size: 100%;
+  font-size: 30%;
 }
 .hero{
   display: flex;
@@ -88,20 +85,20 @@ li{
 .right{
   flex:1;
   font-style: oblique;
-  font-size: 100%;
+  font-size: 30%;
   font-family: 'Times New Roman', Times, serif;
 }
 .right h1{
-  font-size: 45px;
+  font-size: 30%;
   margin-bottom: 10px;
 }
 .right p{
-  font-size: 25px;
+  font-size: 30%;
   margin-bottom: 10%;
   color:#333;
 }
 h1{
-  font-size:170%;
+  font-size:50%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -113,7 +110,7 @@ h1{
   color: #333;
   cursor:pointer;
   margin-right: 10%;
-  font-size:90%;
+  font-size:30%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -142,7 +139,7 @@ a{
   padding: 0px 15%;
   margin-top: 15%;
   font-weight: bold;
-  font-size:100%;
+  font-size:30%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -152,7 +149,7 @@ a{
   margin-top: 8%;
   border:2% solid #333;
   background-color: #e5d1b8;
-  font-size:100%;
+  font-size:30%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -163,7 +160,7 @@ a{
   margin-top: 8%;
   border:4% solid #333;
   background-color: #e5d1b8;
-  font-size:100%;
+  font-size:30%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -173,16 +170,116 @@ a{
   margin-top: 8%;
   border:2% solid #333;
   background-color: #e5d1b8;
-  font-size:100%;
+  font-size:30%;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* تعديل حجم الخط للموبايل وتقليل المسافة بين الاسم والقائمة */
+/* ✅ دعم الموبايل فقط */
 @media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+  .hero {
+    flex-direction: column;
+    margin-top: 5%;
+    gap: 20px;
+  }
+  .hero img {
+    margin-right: 0;
+    width: 80%;
+    height: auto;
+  }
+  .main {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact {
+    padding: 5%;
+  }
+  .contact form label,
+  .contact form input,
+  .contact form button,
+  #message {
+    padding: 3% 5%;
+    margin: 3% 0;
+  }
+  .right button {
+    margin-right: 0;
+  }
+}
+/* ✅ قائمة همبرغر بدون جافاسكربت */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ✅ العرض في الهاتف */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .ul {
+    display: none;
+    flex-direction: column;
+    background-color: #e5d1b8;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 999;
+  }
+
+  #menu-toggle:checked + label + .ul {
+    display: flex;
+  }
+
+  .ul li {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .ul li a.link {
+    font-size: 16px;
+  }
+
+  /* ✅ الصورة فوق والكتابة تحت */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero img {
+    margin-right: 0;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .right {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* ✅ عرض عام للموبايل */
   body {
     font-size: 12px;
   }
+
   .animated-name {
     font-size: 24px;
     max-width: 100px;
@@ -190,38 +287,46 @@ a{
     overflow: hidden;
     text-overflow: ellipsis;
   }
+
   .header {
     gap: 5px;
     padding: 2% 5%;
   }
+
   .right h1 {
     font-size: 20px;
   }
+
   .right p {
     font-size: 14px;
   }
-  .ul li a.link {
-    font-size: 14px;
-  }
+
   .right button {
     font-size: 12px;
     margin-right: 5px;
   }
+
   h1 {
     font-size: 18px;
   }
+
   .li {
     font-size: 14px;
   }
-  .contact form label,
-  .contact form input,
-  .contact form button,
-  #message {
-    font-size: 14px;
+
+  /* ✅ جعل About و Project فوق بعض */
+  .main {
+    display: block;
+    padding: 5%;
   }
-  .hero img {
-    max-width: 220px;
-    height: auto;
-    margin-right: 15px;
+
+  .about,
+  .project {
+    margin-bottom: 40px;
+  }
+
+  .about h1,
+  .project h1 {
+    text-align: center;
   }
 }
