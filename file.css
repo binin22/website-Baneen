@@ -14,13 +14,14 @@
 .ul li a.link:hover{
   color:#a77c47;
 }
+
 .animatedname{
   width: fit-content;
   overflow: hidden;
   white-space: nowrap;
   font-size: 3rem;
   transform: translateY(0%);
-  animation: typing 4s steps(16) infinite alternate, blink 0.7s step-end  infinite ;
+  animation: typing 4s steps(16) infinite alternate, blink 0.7s step-end infinite;
 }
 @keyframes typing {
   from{width: 0;}
@@ -47,6 +48,7 @@
   position: sticky;
   top: 0%;
   background-color: #e5d1b8;
+  justify-content: space-between;  /* عشان الاسم والهمبرغر بنفس السطر وبالطرفين */
 }
 body{
   background-image: url("photo_2025-06-27_18-03-09.jpg");  
@@ -178,8 +180,10 @@ a{
 /* ✅ دعم الموبايل فقط */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
+    flex-direction: row;  /* الاسم والهمبرغر بنفس السطر */
     align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
   }
   .ul {
     flex-direction: column;
@@ -196,9 +200,21 @@ a{
     width: 80%;
     height: auto;
   }
+  .right {
+    text-align: center;
+    padding: 0 10px;
+  }
   .main {
-    flex-direction: column;
-    gap: 30px;
+    display: block; /* About و Project فوق بعض */
+    padding: 5%;
+  }
+  .about,
+  .project {
+    margin-bottom: 40px;
+  }
+  .about h1,
+  .project h1 {
+    text-align: center;
   }
   .contact {
     padding: 5%;
@@ -213,25 +229,17 @@ a{
   .right button {
     margin-right: 0;
   }
-}
-/* ✅ قائمة همبرغر بدون جافاسكربت */
-#menu-toggle {
-  display: none;
-}
 
-.menu-icon {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: #333;
-}
-
-/* ✅ العرض في الهاتف */
-@media (max-width: 768px) {
+  /* ✅ قائمة همبرغر بدون جافاسكربت */
+  #menu-toggle {
+    display: none;
+  }
   .menu-icon {
     display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
   }
-
   .ul {
     display: none;
     flex-direction: column;
@@ -243,90 +251,14 @@ a{
     padding: 10px 0;
     z-index: 999;
   }
-
   #menu-toggle:checked + label + .ul {
     display: flex;
   }
-
   .ul li {
     padding: 10px;
     text-align: center;
   }
-
   .ul li a.link {
     font-size: 16px;
-  }
-
-  /* ✅ الصورة فوق والكتابة تحت */
-  .hero {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .hero img {
-    margin-right: 0;
-    max-width: 90%;
-    height: auto;
-  }
-
-  .right {
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  /* ✅ عرض عام للموبايل */
-  body {
-    font-size: 12px;
-  }
-
-  .animated-name {
-    font-size: 24px;
-    max-width: 100px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .header {
-    gap: 5px;
-    padding: 2% 5%;
-  }
-
-  .right h1 {
-    font-size: 20px;
-  }
-
-  .right p {
-    font-size: 14px;
-  }
-
-  .right button {
-    font-size: 12px;
-    margin-right: 5px;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-
-  .li {
-    font-size: 14px;
-  }
-
-  /* ✅ جعل About و Project فوق بعض */
-  .main {
-    display: block;
-    padding: 5%;
-  }
-
-  .about,
-  .project {
-    margin-bottom: 40px;
-  }
-
-  .about h1,
-  .project h1 {
-    text-align: center;
   }
 }
