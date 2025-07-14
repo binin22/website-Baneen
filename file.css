@@ -52,42 +52,6 @@ body {
   50% { border-color: transparent }
 }
 
-/* ✅ Fade-in (عنصر يطلع تدريجياً) */
-.Fade-In {
-  opacity: 0;
-  animation: fadeIn 2s ease infinite alternate;
-}
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-/* ✅ Slide-up (عنصر يطلع من تحت لفوق) */
-.Slide-Up {
-  transform: translateY(30px);
-  opacity: 0;
-  animation: slideUp 1.5s ease infinite alternate;
-}
-@keyframes slideUp {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* ✅ Zoom-in (عنصر يكبر شوي أثناء الظهور) */
-.Zoom-In {
-  transform: scale(0.8);
-  opacity: 0;
-  animation: zoomIn 1.5s ease infinite alternate;
-}
-@keyframes zoomIn {
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-
 
 /* قائمة التنقل */
 .ul {
