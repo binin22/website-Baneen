@@ -1,39 +1,43 @@
-.ul{
+/* ------- قائمة التنقل الأساسية ------- */
+.ul {
   display: flex;
-  gap:20%;
+  gap: 20%;
   list-style: none;
-  padding:0% 25%;
+  padding: 0% 25%;
   margin: 0;
 }
-.ul li a.link{
-  text-decoration:none;
-  color:#333;
+.ul li a.link {
+  text-decoration: none;
+  color: #333;
   font-weight: bold;
-  font-size: larger;
+  font-size: 1rem;
 }
-.ul li a.link:hover{
-  color:#a77c47;
+.ul li a.link:hover {
+  color: #a77c47;
 }
 
-.animatedname{
+/* ------- تأثير الاسم المتحرك ------- */
+.animatedname {
   width: fit-content;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 3rem;
+  font-size: 2rem;
   transform: translateY(0%);
   animation: typing 4s steps(16) infinite alternate, blink 0.7s step-end infinite;
 }
 @keyframes typing {
-  from{width: 0;}
-  to{width: 16ch;}
+  from { width: 0; }
+  to { width: 16ch; }
 }
-@keyframes blink{
-  50%{border-color:transparent}
+@keyframes blink {
+  50% { border-color: transparent; }
 }
-.animated{
+
+/* ------- عنوان متحرك عند الظهور ------- */
+.animated {
   opacity: 0;
   transform: translateY(40%);
-  animation: slideUp 2s ease-in-out infinite alternate ;
+  animation: slideUp 2s ease-in-out infinite alternate;
 }
 @keyframes slideUp {
   to {
@@ -41,219 +45,149 @@
     transform: translateY(0);
   }
 }
-.header{
+
+/* ------- العنوان الرئيسي لكل قسم (موحد) ------- */
+h1 {
+  font-size: 2rem;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ------- النصوص (p, li, .li) موحدة ------- */
+p, li, .li {
+  font-size: 1rem;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.7;
+}
+.li {
+  list-style-type: none;
+}
+
+/* ------- رأس الصفحة ------- */
+.header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0% 1%;
   position: sticky;
   top: 0%;
   background-color: #e5d1b8;
-  justify-content: space-between;  /* عشان الاسم والهمبرغر بنفس السطر وبالطرفين */
-}
-body{
-  background-image: url("photo_2025-06-27_18-03-09.jpg");  
-  background-color:rgba(230, 212, 182) ;
-  background-blend-mode: overlay;
-  font-size: 2vw;
-  font-size: 3vh;
-}
-p{
-  line-height: 1.7;
-  font-style: oblique;
-  font-size: 100%;
-  font-family: 'Times New Roman', Times, serif;
-}
-li{
-  line-height: 1.7;
-  font-style: oblique;
-  font-size: small;
-  font-family: 'Times New Roman', Times, serif;
-}
-.li {
-  list-style-type: none;  /* إزالة الخط الجوزي */
-  font-size: 100%;        /* حجم خط طبيعي */
 }
 
-.hero{
+/* ------- الخلفية العامة ------- */
+body {
+  background-image: url("photo_2025-06-27_18-03-09.jpg");  
+  background-color: rgba(230, 212, 182);
+  background-blend-mode: overlay;
+  font-size: 1rem;
+}
+
+/* ------- قسم الترحيب ------- */
+.hero {
   display: flex;
   align-items: center;
-  gap: -10%;
+  gap: 30px;
   margin-top: 3%;
 }
-.hero img{
+.hero img {
   border-radius: 10%;
-  box-shadow: 0 4% 10% rgba(0,0,0,0.1);
-  margin-right:220px;
+  box-shadow: 0 4% 10% rgba(0, 0, 0, 0.1);
+  margin-right: 50px;
 }
-.right{
-  flex:1;
-  font-style: oblique;
-  font-size: 30%;
-  font-family: 'Times New Roman', Times, serif;
+.right {
+  flex: 1;
+  text-align: left;
 }
-.right h1{
-  font-size: 30%;
+.right h1 {
+  font-size: 2rem;
   margin-bottom: 10px;
 }
-.right p{
-  font-size: 30%;
+.right p {
+  font-size: 1rem;
   margin-bottom: 10%;
-  color:#333;
+  color: #333;
 }
-h1{
-  font-size:50%;
-  font-style: oblique;
-  font-family: 'Times New Roman', Times, serif;
-}
-.right button{
+.right button {
   font-weight: bold;
   border-radius: 20%;
   padding: 2% 2%;
   background-color: #e5d1b8;
   color: #333;
-  cursor:pointer;
+  cursor: pointer;
   margin-right: 10%;
-  font-size:30%;
+  font-size: 1rem;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
-}
-a{
-  text-decoration: none;
 }
 .right button:hover {
   background-color: #d6b890;
 }
-.main{
+a {
+  text-decoration: none;
+}
+
+/* ------- الأقسام الرئيسية ------- */
+.main {
   display: flex;
-  gap:8%;
+  gap: 8%;
   align-items: center;
   padding: 8% 5%;
 }
-.contact{
+.about, .project {
+  flex: 1;
+}
+
+/* ------- قسم التواصل ------- */
+.contact {
   border-radius: 20%;
   margin-top: 2%;
   padding: 0% 30%;
   align-self: flex-start;
 }
-.contact h1{
-  margin-bottom: 12%;
-}
-.contact form label{
-  padding: 0px 15%;
-  margin-top: 15%;
-  font-weight: bold;
-  font-size:30%;
+.contact form label,
+.contact form input,
+.contact form button,
+#message {
+  font-size: 1rem;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
 }
-.contact form input{
+.contact form input,
+#message {
   padding: 2% 4%;
   border-radius: 20%;
   margin-top: 8%;
-  border:2% solid #333;
+  border: 2% solid #333;
   background-color: #e5d1b8;
-  font-size:30%;
-  font-style: oblique;
-  font-family: 'Times New Roman', Times, serif;
 }
-.contact form button{
+.contact form button {
   padding: 2% 12%;
   margin-left: 20%;
-  border-radius: 20%;
   margin-top: 8%;
-  border:4% solid #333;
-  background-color: #e5d1b8;
-  font-size:30%;
-  font-style: oblique;
-  font-family: 'Times New Roman', Times, serif;
-}
-#message{
-  padding: 5% 5%;
   border-radius: 20%;
-  margin-top: 8%;
-  border:2% solid #333;
+  border: 4% solid #333;
   background-color: #e5d1b8;
-  font-size:30%;
-  font-style: oblique;
-  font-family: 'Times New Roman', Times, serif;
 }
 
+/* ------- همبرغر مينو بدون JS ------- */
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
 
-
-/* ✅ دعم الموبايل فقط */
+/* ------- تصميم الموبايل ------- */
 @media (max-width: 768px) {
-  .header {
-    flex-direction: row;  /* الاسم والهمبرغر بنفس السطر */
-    align-items: center;
-    justify-content: space-between;
-    padding: 2% 5%;
-  }
-  .li {
-    font-size: 14px; /* الحجم الصغير الحالي */
-  }
-  .ul {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-  }
-  .hero {
-    flex-direction: column;
-    margin-top: 5%;
-    gap: 20px;
-  }
-  .hero img {
-    margin-right: 0;
-    width: 80%;
-    height: auto;
-  }
-  .right {
-    text-align: center;
-    padding: 0 10px;
-  }
-  .main {
-    display: block; /* About و Project فوق بعض */
-    padding: 5%;
-  }
-  .project {
-  font-size: 100%; /* حجم خط طبيعي */
-  font-style: oblique;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.project h1 {
-  font-size: 170%; /* نفس حجم About Me */
-  font-style: oblique;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-  .about h1,
-  .project h1 {
-    text-align: center;
-  }
-  .contact {
-    padding: 5%;
-  }
-  .contact form label,
-  .contact form input,
-  .contact form button,
-  #message {
-    padding: 3% 5%;
-    margin: 3% 0;
-  }
-  .right button {
-    margin-right: 0;
-  }
-
-  /* ✅ قائمة همبرغر بدون جافاسكربت */
-  #menu-toggle {
-    display: none;
-  }
+  /* القائمة */
   .menu-icon {
     display: block;
-    font-size: 28px;
-    cursor: pointer;
-    color: #333;
   }
   .ul {
     display: none;
@@ -274,6 +208,79 @@ a{
     text-align: center;
   }
   .ul li a.link {
-    font-size: 16px;
+    font-size: 14px;
   }
+
+  /* الهيدر */
+  .header {
+    flex-direction: row;
+    gap: 5px;
+    padding: 2% 5%;
+    justify-content: space-between;
+  }
+
+  /* الهيرو */
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    gap: 20px;
+  }
+  .hero img {
+    margin-right: 0;
+    width: 80%;
+    height: auto;
+  }
+
+  /* النصوص في الموبايل */
+  h1 {
+    font-size: 20px;
+  }
+  p, li, .li {
+    font-size: 14px;
+  }
+  .right h1 {
+    font-size: 20px;
+  }
+  .right p {
+    font-size: 14px;
+  }
+  .right button {
+    font-size: 12px;
+    margin-right: 0;
+  }
+
+  /* الأقسام */
+  .main {
+    display: block;
+    padding: 5%;
+  }
+  .about,
+  .project {
+    margin-bottom: 40px;
+  }
+  .about h1,
+  .project h1 {
+    text-align: center;
+  }
+
+  /* الفورم */
+  .contact {
+    padding: 5%;
+  }
+  .contact form label,
+  .contact form input,
+  .contact form button,
+  #message {
+    font-size: 14px;
+    margin: 3% 0;
+  }
+}
+.contact form input,
+.contact form textarea,
+.contact form button {
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: #e5d1b8; /* نفس خلفية الفورم */
 }
