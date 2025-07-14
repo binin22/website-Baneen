@@ -1,3 +1,14 @@
+html,body{
+  max-width:100%;
+  overflow-x:hidden;
+}
+.hero img{
+
+  max-width:100%;
+  height:auto;
+  border-redius:20px;
+}
+
 /* ------- قائمة التنقل الأساسية ------- */
 .ul {
   display: flex;
@@ -284,3 +295,22 @@ a {
   outline: none !important;
   background-color: #e5d1b8; /* نفس خلفية الفورم */
 }
+/* ✅ 1. توسيط الرسالة الترحيبية */
+.right {
+  text-align: center;
+}
+
+/* ✅ 2. توسيط قسم About */
+.about {
+  text-align: center;
+}
+
+/* ✅ 3. توسيط قسم Projects */
+.project {
+  text-align: center;
+}
+.project ul {
+  list-style-position: inside; /* حتى تظهر نقاط التعداد بالمركز */
+  padding: 0;
+}
+
