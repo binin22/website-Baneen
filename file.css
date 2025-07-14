@@ -7,7 +7,9 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #fffaf3;
+  /* background: #fffaf3; */
+  background-image: url("photo_2025-06-27_18-03-09.jpg");
+
 }
 
 /* ---------------- الهيدر ---------------- */
@@ -22,12 +24,70 @@ body {
   z-index: 999;
 }
 
-/* اسم الموقع */
-.animatedname {
-  font-size: 28px;
+
+
+
+/* ✅ حركة الكتابة لاسمك */
+.name-typing {
+  font-size: 32px;
   font-weight: bold;
   color: #5a3e2b;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #5a3e2b;
+  width: 0;
+  animation: typingLeft 3.5s steps(25, end) forwards, blink 0.6s step-end infinite;
+  display: inline-block;
+  text-align: left;
+  direction: ltr;
+  margin-left: 5%; /* تحكم في بعد الاسم عن يسار الشاشة */
 }
+
+@keyframes typingLeft {
+  from { width: 0 }
+  to { width: 16ch } /* أو 100% إذا تريدي كل الاسم مهما طوله */
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* ✅ Fade-in (عنصر يطلع تدريجياً) */
+.Fade-In {
+  opacity: 0;
+  animation: fadeIn 2s ease infinite alternate;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* ✅ Slide-up (عنصر يطلع من تحت لفوق) */
+.Slide-Up {
+  transform: translateY(30px);
+  opacity: 0;
+  animation: slideUp 1.5s ease infinite alternate;
+}
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ✅ Zoom-in (عنصر يكبر شوي أثناء الظهور) */
+.Zoom-In {
+  transform: scale(0.8);
+  opacity: 0;
+  animation: zoomIn 1.5s ease infinite alternate;
+}
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
 
 /* قائمة التنقل */
 .ul {
